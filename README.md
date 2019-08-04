@@ -5,7 +5,7 @@
 
 MSSQL Server Replication是兩台資料庫自動同步的功能，不管在異地備援或是 Redundant DB 之類的功能需求都很有用。因為工作上正好用到，需要教團隊如何使用，就順手做了這個 Project。
 
-MSSQL Server Replication適用於MSSQL Express以及MSSQL正式版。大家可以用免錢的MSSQL Express來練習，設定跟正式版一模一樣。
+MSSQL Server Replication在MSSQL Enterprise版才有完整支援四種模式，其它版本只支援其中三種模式（不支援Peer to Peer)，而SQL Web與SQL Express只能當subscriber。想要完整練習建議去找MSSQL Developer Edition。
 
 DBWriteTool是測試DB Replication的簡單小工具。可以利用這個小工具去觀察DB Replication的一些行為特徵，例如執行到一半兩台資料庫斷線，兩邊的資料表有什麼不同？或是兩邊各自寫了幾筆資料後突然恢復連線，資料庫同步又會出什麼問題？
 
